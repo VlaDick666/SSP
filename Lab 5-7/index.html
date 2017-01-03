@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  	<title>NYTimes Geographic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+</head>
+<body>
+  <img class="name" src="nyt-logo.png">
+  <h1>Geography</h1>
+    <div class="contener">
+        <script src="lib/main.js"></script>
+        <script src="lib/ImageService.js"></script>
+        <main ng-controller="AppController">
+
+    	    <div class="button-contener"> <h2>Filter</h2></div>
+		    <div class="button-contener"> <input type="text"  ng-model="filt" placeholder="number"></input></div>
+            <hr style="width: 100%; border: 1px solid white;">
+            <div ng-class="$odd ? 'list-style' : 'even-list-style'" ng-repeat="geo in geo | orderBy:sortparam:sortReverse | limitTo:filt || 15" >
+                <div class="FN-div" >
+                    <div><img ng-src={{geo.media[0]["media-metadata"][1].url}}></div>
+                    <div>{{geo.byline}}</div>
+                </div>
+                <div class="LN-div" >
+                    <div><h4>{{geo.title}}</h4></div>
+                    <div>{{geo.abstract}}</div>
+                </div>
+                <div class="AG-div" >
+                    <div><a href="{{geo.url}}">more...</a></div>
+                </div>
+            </div>
+
+          <form>
+            <div class="cont">
+            <div class="button-contener">
+                <h2>Title</h2>
+                <input type="text" ng-model="title">
+            </div>
+            <div class="button-contener">
+                <h2>Abstract</h2>
+                <input type="text" ng-model="abstract">
+            </div>
+            <div class="button-contener">
+                <h2>Link</h2>
+                <input type="text" ng-model="url">
+            </div>
+            <div class="button-contener">
+                <h2>Apply</h2>
+                <button class="button" ng-click="Addgeo(title,abstract,url)">Add news</button>
+            </div>
+            </div>
+          <form/>
+
+            <hr style="width: 100%; border: 1px solid white;">
+        </main>
+    <div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+
+.list-style{
+    margin-bottom: 8px;
+    width: 100%;
+    height: 195px;
+    display: block;
+    background-color: #88FF76;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+.even-list-style{
+    margin-bottom: 8px;
+    width: 100%;
+    height: 195px;
+    background-color: #88FF76;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+.list-style > .FN-div{
+    width: 28%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    background-color: #88FF76;
+    float: left;
+    text-align: left;
+    border-radius: 5px;
+}
+.list-style > .FN-div > div{
+    text-align: center;
+}
+.list-style > .LN-div{
+    width: 48%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #88FF76;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.list-style > .AG-div{
+    width: 24%;
+    padding-top: 75px;
+    background-color: #88FF76;
+    display: block;
+    float: left;
+    text-align: right;
+    border-radius: 5px;
+    text-align: center;
+}
+.even-list-style > .FN-div{
+    width: 28%;
+    background-color: #88FF76;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    float: left;
+    text-align: left;
+    border-radius: 5px;
+}
+.even-list-style > .FN-div > div{
+    text-align: center;
+}
+.even-list-style > .LN-div{
+    width: 48%;
+    background-color: #88FF76;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.even-list-style > .AG-div{
+    width: 24%;
+    background-color: #88FF76;
+    padding-top: 75px;
+    display: block;
+    float: left;
+    text-align: right;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+  margin-bottom: 8px;
+  width: 100%;
+  height: 110px;
+  display: block;
+  background-color: #88FF76;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+.cont {
+margin-left: 7%;
+margin-top: -3%;
+}
+/************************************************************************************************************************/
+
+body{
+  background-color: #B6FFAB;
+    font-family: 'Times';
+    font-size: 17px;
+}
+.name{
+	    margin: 0 auto;
+    display: block;
+}
+h1{
+margin: 0 auto;
+display: block;
+text-align: center;
+}
+.contener{
+	width: 80%;
+    margin-left: 10%;
+}
+.button{
+    padding: 3px 7px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #36FF3D;
+    border: 1px solid #666;
+    width: 173px;
+    height: 33px;
+    margin-top: -2px;
+}
+.button-contener{
+    float: left;
+    display: block;
+    border-radius: 5px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+input{
+    padding: 3px 7px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #666;
+    width: 215px;
+    height: 24px;
+}
+h2{
+    margin-top: -0px;
+}
