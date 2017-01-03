@@ -1,0 +1,190 @@
+div
+{
+  padding-left: 2px;
+}
+body
+{
+  font-size:18px;
+}
+.titlecomment
+{
+  padding:5px;
+}
+.title
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: blue;
+  font-weight:bold;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  width: 230px;
+}
+.comment
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style:italic;
+  width:176px;
+  padding-left: 10px;
+}
+.status
+{
+  width: 94px;
+}
+.owner
+{
+  width: 62px;
+}
+.module
+{
+  width: 103px;
+  padding left: 2px;
+}
+.reporter
+{
+  color: lightgray;
+  width: 75px;
+}
+.symbols
+{
+  width: 26px;
+}
+.dates
+{
+  width: 112px;
+}
+.open
+{
+  background-color: blue;
+  color:white;
+}
+.inprogress
+{
+  background-color: limegreen;
+  color:white;
+}
+.high
+{
+  color:red
+}
+.medium
+{
+  color:blue;
+}
+.low
+{
+  color: green
+}
+.firstline
+{
+  background-color: pink;
+  font-weight: bold;
+  display:flex;
+  flex-direction: row;
+  padding-left: 1px;
+}
+.modulereporter
+{
+  display: flex;
+  flex-direction: row;
+}
+.statusowner
+{
+  display: -webkit-box;
+}
+.block
+{
+  display: flex;
+  flex-direction: row;
+}
+.line
+{
+  display: flex;
+  flex-direction: row;
+}
+.statusowner2
+{
+  display: none;
+}
+.nomer
+{
+  padding-left: 2px;
+}
+.green
+{
+  color:green;
+}
+.blue
+{
+  color: blue;
+}
+.red
+{
+  color:red;
+}
+.gray
+{
+  color: gray;
+}
+.eye
+{
+  width: 26px;
+}
+.comment1
+{
+  width: 26px;
+}
+.severity
+{
+  width: 73px;
+}
+.sev2
+{
+  display: none;
+}
+
+  @media screen and (max-width: 1000px)
+  {
+    .block
+    {
+      display: flex;
+     flex-direction: column;
+    }
+     .statusowner
+     {
+       display: block;
+     }
+     .statusowner2
+     {
+       display: none;
+     }
+     .sev2
+     {
+       display: none;
+     }
+    }
+  @media screen and (max-width: 540px)
+  {
+    .statusowner
+    {
+      display: none;
+    }
+    .sev
+    {
+      display: none;
+    }
+    .statusowner2
+    {
+      display: flex;
+     padding-left: 10px;
+    }
+     .sev2
+     {
+       display: flex;
+       padding-left: 10px;
+     }
+   }
