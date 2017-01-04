@@ -13,8 +13,9 @@
         <script src="lib/ImageService.js"></script>
         <main ng-controller="AppController">
 
-    	    <div class="button-contener"> <h2>Filter</h2></div>
+    	    <div id="button-contener"> <h2>Filter</h2></div>
 		    <div class="button-contener"> <input type="text"  ng-model="filt" placeholder="number"></input></div>
+        	<button class="button-contener" id="button" ng-click="filterEvent()">Only 10 news</button><br>
             <hr style="width: 100%; border: 1px solid white;">
             <div ng-class="$odd ? 'list-style' : 'even-list-style'" ng-repeat="geo in geo | orderBy:sortparam:sortReverse | limitTo:filt || 15" >
                 <div class="FN-div" >
