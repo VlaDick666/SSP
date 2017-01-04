@@ -2,6 +2,11 @@ var app = angular.module('app', []);
 app.controller('AppController',function($http,$scope,imageService){
             $scope.geo = [];
             $scope.filt ;
+            $scope.filterEvent = function(){
+		              if($scope.filt !==10){
+			                  $scope.filt = 10;
+		                      }
+                        }
             $scope.sortparam='published_date';
             $scope.sortReverse  = true;
             $http.get('https://api.nytimes.com/svc/mostpopular/v2/mostemailed/Travel/30.json?api-key=559c62635628401caacf51ff44c9a592')
